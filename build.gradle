@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.0'
+    }
+}
+
+plugins {
+    id 'com.github.sherter.google-java-format' version '0.8'
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+googleJavaFormat {
+    options style: 'AOSP'
+}
